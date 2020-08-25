@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
 public class MainActivity extends AppCompatActivity {
-Button singnUp;Button go;
+Button singnUp;Button go;Button forgo;
     TextInputLayout regEmail, regPassword;
 
     DatabaseReference databaseReference;
@@ -81,6 +81,17 @@ Button singnUp;Button go;
                 startActivity(intent);
     }
 });
+
+        forgo = findViewById(R.id.forget);
+        forgo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, forgetPassword.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }
