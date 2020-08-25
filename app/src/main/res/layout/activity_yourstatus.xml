@@ -49,7 +49,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="375dp"
-        android:layout_height="128dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,35 +85,25 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/profession"
+            android:id="@+id/pincode"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="profession" />
+            android:hint="Pincode">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/travel"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Travel in last 30 days" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66" />
-
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/male"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Male"
@@ -125,7 +115,7 @@
         app:layout_constraintVertical_bias="0.274" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/female"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Female"
@@ -135,19 +125,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.274" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profession"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66" />
 
     <TextView
         android:id="@+id/textView5"
@@ -176,7 +153,7 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/nCough"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No"
@@ -188,7 +165,7 @@
         app:layout_constraintVertical_bias="0.805" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/nFever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No"
@@ -200,7 +177,7 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/yCough"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes"
@@ -211,7 +188,7 @@
         app:layout_constraintVertical_bias="0.805" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/yFever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes"
@@ -222,6 +199,7 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <Button
+        android:id="@+id/check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#000"
